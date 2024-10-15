@@ -1,6 +1,6 @@
 # Practica-4-Network-e-Compose
 
-## <h1 style="text-align: center;">Docker network</h1>
+## <h2 style="text-align: center;">Docker network</h2>
 
 ## 1 Crear unha rede en docker
 
