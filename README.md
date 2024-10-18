@@ -27,6 +27,8 @@ round-trip min/avg/max = 0.152/0.250/0.427 ms
 
 Para comprobar con el comando `docker network inspect red-1` proporcionara informacion entre ella los contenedor conectados a la red.
 
+Tambien utilizando el comando `docker network inspect red-1 | jq -r '.[0].Containers[] | .Name'` no indicara solo el nombre de los comandos creados dentro de la red.
+
 ## 6 Listar as propiedades da rede
 
 Utilizando el comando `docker network ls` se podra ver una vision general de las propiedades de la red, para profundizar se podria utilizar el comando `docker network inspect red-1`.
@@ -40,6 +42,13 @@ Se repide el primer comando utilizando otro nombre, `docker network create red-2
 Una vez creada la red utilizando el comando `docker run -itd --name=jose --network=red-2 busybox` se repetira dos veces.
 
 ## 9 Comproba as posibles conexións entre os 4 contenedores
+ 
+
+Accedemos al contenedor creado, `docker exec -it manu sh` y hacemos ping al otro contenedor se ve que da envia los ping sin problema. Al hacerle ping al cotenedor de la primera red no indica que no es valido.
+
+/ # ping chaming_fermat
+ping: bad address 'chaming_fermat'
+/ # 
 
 
 ## Docker compose:
