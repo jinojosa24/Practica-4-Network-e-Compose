@@ -53,9 +53,30 @@ ping: bad address 'chaming_fermat'
 
 ## Docker compose:
 
-## 1 Segue os pasos da guía de iniciación de docker-compose, e explica coas túas palabras os pasos que segues e qué fan
+## 1 Segue os pasos da guía de iniciación de docker-compose, e explica coas túas palabras os pasos que segues e qué fan.
+
+Docker compose simplifica el proceso de gestionar aplicaciones con multiples contenedores, porque pertmite definir todo en un archivo YAML.
+
+Se tiene que tener instalada docker compose, al estar trabajando con docker ya viene inluido dentro de los paquete.
+
+# Paso1: Instar
+
+Dentro de este paso se tiene que cumplir una serie de requisitos por ejemplo; crear una carpeta, un archivo `.py`, un archivo `.txt` y un dockerfile.
+
+# Paso2:  Definir los servicios en un archivo Compose
+
+Como se comento en el primer apartado con `docker-compose` simplifica el control de sus aplicaciones. En este paso se creara un archivo ỳaml` este archivo define dos servicios web y redis. El web utiliza una imagen y el redis servicio utiliza una imagen publica. 
+
+# Paso3:  Construya y ejecute su aplicación con Compose
+
+Con un solo comando, crea y inicia todos los servicios desde su archivo de configuración.
+
+# Paso4:  Editar el archivo Compose para usar Compose Watch
+
+Se utiliza para edicion del archivo `.yaml` y cada vez que se edite docker compose actualizara el codigo.
 
 ## 2 Agora que sabes algo máis de docker-compose, crea un arquivo (ou varios arquivos) de configuración que ó ser lanzados cun docker-compose up, resulten nunha rede docker á que estean conectados 3 contenedores, explica os parámetros do .yaml usado
+
 
 ## 3 Busca e proba 4 parámetros e configuracións diferentes que podes incluir no arquivo compose, explica qué fan. (por exemplo diferentes cousas que facer coa opción RUN)
 
