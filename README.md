@@ -112,5 +112,19 @@ al utilizar el comando `docker compose up` este fue el resultado:
 
 ## 3 Busca e proba 4 parámetros e configuracións diferentes que podes incluir no arquivo compose, explica qué fan. (por exemplo diferentes cousas que facer coa opción RUN)
 
+### ARGS:
 
+Con esto definimos argumentos de creación. Podemos hacer uso de diversos valores. Si hacemos uso de valores booleanos como, true, false, yes, no, necesitamos encerrarlos en comillas para asegurarnos que no sean convertidos a TRUE o FALSE por el analizador YML.
+
+### ENTRYPOINT:
+
+Reemplaza el punto de entrada por defecto.
+
+### EXPOSE:
+
+Expone los puertos sin publicarlos al Host. Solo estarán disponibles para los servicios linkeados. Solo se pueden especificar los puertos internos.
+
+### LOGGING
+
+Configuración de logging para el servicio. Util cuando queremos centralizar los logs de los contenedores.
 
