@@ -78,16 +78,35 @@ Se utiliza para edicion del archivo `.yaml` y cada vez que se edite docker compo
 ## 2 Agora que sabes algo máis de docker-compose, crea un arquivo (ou varios arquivos) de configuración que ó ser lanzados cun docker-compose up, resulten nunha rede docker á que estean conectados 3 contenedores, explica os parámetros do .yaml usado
 Se siguen todos los pasos, como se explico en el anterior apartado. Y en el archivo de `.yaml` Cree una red puente. Luego agregue en services tres contenedores dandole la misma imagen, cambiadole el puerto y asignandole la red creada. 
 al utilizar el comando `docker compose up` este fue el resultado:
+
 *jose@jose-VirtualBox:~/dockercom$ docker compose up*
-*WARN[0000] Found orphan containers ([dockercom-web-1 dockercom-redis-1]) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up.* 
+
+*WARN[0000] Found orphan containers ([dockercom-web-1 dockercom-redis-1]) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up.*
+
 *[+] Running 4/4*
- *✔ Network dockercom_mired*  *Created*                                                                                            *0.1s* 
- *✔ Container DOS*            *Created*                                                                                            *0.1s* 
- *✔ Container TRES*           *Created*                                                                                            *0.1s* 
- *✔ Container UNO*            *Created*                                                                                            0.1s 
+
+ *✔ Network dockercom_mired*
+
+   *Created*  
+                                                                                             *0.1s* 
+
+ *✔ Container DOS*   
+    *Created* 
+                                                                                             *0.1s* 
+
+ *✔ Container TRES*
+    *Created*                                                                                            
+            *0.1s*
+
+ *✔ Container UNO*
+    *Created* 
+                                                                                             *0.1s* 
 *Attaching to DOS, TRES, UNO*
+
 *UNO exited with code 0*
+
 *TRES exited with code 0*
+
 *DOS exited with code 0*
 
 
